@@ -1,0 +1,144 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #f0f4ff, #e6f0ff);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #1e3a8a;
+    padding: 15px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    margin-right: 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.nav a:hover {
+    color: #93c5fd;
+}
+
+.nav a.active {
+    border-bottom: 2px solid #93c5fd;
+    padding-bottom: 3px;
+}
+
+/* Main */
+main {
+    flex: 1;
+    padding: 50px 20px;
+}
+
+/* Education Intro */
+.education-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.education-intro h1 {
+    font-size: 36px;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.education-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Education Cards */
+.education-details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.edu-card {
+    background-color: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.edu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.edu-card i {
+    font-size: 40px;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.edu-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.edu-card p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav .logo {
+        margin-right: 0;
+    }
+
+    .education-details {
+        flex-direction: column;
+        align-items: center;
+    }
+}
